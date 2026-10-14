@@ -1,0 +1,51 @@
+{
+  "app_config": {
+    "force_update": {
+      "min_version_code": 1,
+      "latest_version_code": 1,
+      "is_mandatory": false,
+      "title": "Update Available",
+      "message": "A new version of Xuper TV is available with performance improvements and new features.",
+      "update_url": "https://play.google.com/store/apps/details?id=com.xuper.tvapp",
+      "positive_button": "Update Now",
+      "negative_button": "Later"
+    },
+    "play_store_protection": {
+      "is_active": false,
+      "title": "Official App Required",
+      "message": "For your security and to receive verified streaming servers, please install the official version of Xuper TV directly from Google Play Store.",
+      "button_text": "Install from Google Play",
+      "play_store_url": "https://play.google.com/store/apps/details?id=com.xuper.tvapp"
+    },
+    "features": {
+      "watch_now_enabled": false,
+      "watch_now_title": "Watch Now",
+      "watch_now_notice": "High Speed Streaming",
+      "watch_now_countries": ["MA", "ES"],
+      "watch_now_blocked_countries": []
+    },
+    "ads": {
+      "show_ads": false,
+      "show_banner": true,
+      "show_interstitial": true,
+      "show_native": true,
+      "show_app_open": true,
+      "interstitial_click_interval": 5,
+      "banner_id": "ca-app-pub-3940256099942544/6300978111",
+      "interstitial_id": "ca-app-pub-3940256099942544/1033173712",
+      "native_id": "ca-app-pub-3940256099942544/2247696110",
+      "app_open_id": "ca-app-pub-3940256099942544/9257395921"
+    },
+    "content_urls": {
+      "movies_url": "https://raw.githubusercontent.com/th3fouad1/xuper-data/refs/heads/main/movies.json",
+      "series_url": "https://raw.githubusercontent.com/th3fouad1/xuper-data/refs/heads/main/series.json",
+      "actors_url": "https://raw.githubusercontent.com/th3fouad1/xuper-data/refs/heads/main/actors.json",
+      "trending_url": "https://raw.githubusercontent.com/th3fouad1/xuper-data/refs/heads/main/trending.json"
+    },
+    "legal": {
+      "privacy_policy_url": "https://sites.google.com/view/xuperprivacy",
+      "contact_email": "contact@xupertv.app",
+      "share_message": "Watch unlimited movies & series for free on Xuper TV! Download now: https://play.google.com/store/apps/details?id=com.xuper.tvapp"
+    }
+  }
+}
