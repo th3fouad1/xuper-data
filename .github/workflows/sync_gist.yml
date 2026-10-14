@@ -1,0 +1,26 @@
+name: Sync Config to Gist
+
+on:
+  push:
+    paths:
+      - 'xuper_config.json'
+  workflow_dispatch:
+
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Update Gist
+        env:
+          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+          GIST_ID: "d8759de324ca2f89fc71557d165224a7"
+        run: |
+          CONTENT=$(jq -Rs . xuper_config.json)
+          curl -s -X PATCH \
+            -H "Authorization: Bearer $GIST_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/gists/$GIST_ID \
+            -d "{\"files\":{\"xuper_config.json\":{\"content\":$CONTENT}}}"
