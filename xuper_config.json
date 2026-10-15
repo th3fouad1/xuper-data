@@ -18,23 +18,23 @@
       "play_store_url": "https://play.google.com/store/apps/details?id=com.xuper.tvapp"
     },
     "features": {
-      "watch_now_enabled": false,
+      "watch_now_enabled": true,
       "watch_now_title": "Watch Now",
       "watch_now_notice": "High Speed Streaming",
-      "watch_now_countries": ["MA", "ES"],
+      "watch_now_countries": ["ES","MA", "MX", "AR", "CO", "PE", "VE", "CL", "EC", "GT", "BO", "DO", "HN", "PY", "SV", "NI", "CR", "PA", "UY", "PR", "GQ", "PT", "BR", "AO", "MZ", "CV", "GW", "ST", "TL", "MO"],
       "watch_now_blocked_countries": []
     },
     "ads": {
-      "show_ads": false,
+      "show_ads": true,
       "show_banner": true,
       "show_interstitial": true,
       "show_native": true,
       "show_app_open": true,
-      "interstitial_click_interval": 5,
-      "banner_id": "ca-app-pub-3940256099942544/6300978111",
-      "interstitial_id": "ca-app-pub-3940256099942544/1033173712",
-      "native_id": "ca-app-pub-3940256099942544/2247696110",
-      "app_open_id": "ca-app-pub-3940256099942544/9257395921"
+      "interstitial_click_interval": 2,
+      "banner_id": "ca-app-pub-5328735289575157/2826403412",
+      "interstitial_id": "ca-app-pub-5328735289575157/1513321745",
+      "native_id": "ca-app-pub-5328735289575157/1498588888",
+      "app_open_id": "ca-app-pub-5328735289575157/9200240073"
     },
     "content_urls": {
       "movies_url": "https://raw.githubusercontent.com/th3fouad1/xuper-data/refs/heads/main/movies.json",
