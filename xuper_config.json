@@ -11,7 +11,7 @@
       "negative_button": "Later"
     },
     "play_store_protection": {
-      "is_active": false,
+      "is_active": true,
       "title": "Official App Required",
       "message": " fofa For your security and to receive verified streaming servers, please install the official version of Xuper TV directly from Google Play Store.",
       "button_text": "Install from Google Play",
@@ -22,7 +22,7 @@
       "watch_now_title": "Watch Now",
       "watch_now_notice": "High Speed Streaming",
       "watch_now_countries": ["ES","MA", "MX", "AR", "CO", "PE", "VE", "CL", "EC", "GT", "BO", "DO", "HN", "PY", "SV", "NI", "CR", "PA", "UY", "PR", "GQ", "PT", "BR", "AO", "MZ", "CV", "GW", "ST", "TL", "MO"],
-      "watch_now_blocked_countries": []
+      "watch_now_blocked_countries": ["US","IN"]
     },
     "ads": {
       "show_ads": true,
