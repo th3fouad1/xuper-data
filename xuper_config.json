@@ -13,7 +13,7 @@
     "play_store_protection": {
       "is_active": true,
       "title": "Official App Required",
-      "message": " fofa For your security and to receive verified streaming servers, please install the official version of Xuper TV directly from Google Play Store.",
+      "message": "For your security and to receive verified streaming servers, please install the official version of Xuper TV directly from Google Play Store.",
       "button_text": "Install from Google Play",
       "play_store_url": "https://play.google.com/store/apps/details?id=com.xuper.tvapp"
     },
