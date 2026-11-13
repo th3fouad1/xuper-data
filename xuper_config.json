@@ -30,7 +30,7 @@
       "show_interstitial": true,
       "show_native": true,
       "show_app_open": true,
-      "interstitial_click_interval": 2,
+      "interstitial_click_interval": 1,
       "banner_id": "ca-app-pub-5328735289575157/2826403412",
       "interstitial_id": "ca-app-pub-5328735289575157/1513321745",
       "native_id": "ca-app-pub-5328735289575157/1498588888",
