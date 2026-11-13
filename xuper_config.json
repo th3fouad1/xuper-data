@@ -19,10 +19,10 @@
     },
     "features": {
       "watch_now_enabled": true,
-      "watch_now_title": "Watch Now",
+      "watch_now_title": "Play Now",
       "watch_now_notice": "High Speed Streaming",
-      "watch_now_countries": ["ES","MA", "MX", "AR", "CO", "PE", "VE", "CL", "EC", "GT", "BO", "DO", "HN", "PY", "SV", "NI", "CR", "PA", "UY", "PR", "GQ", "PT", "BR", "AO", "MZ", "CV", "GW", "ST", "TL", "MO"],
-      "watch_now_blocked_countries": ["US","IN"]
+      "watch_now_countries": ["MA", "MX", "AR", "CO", "PE", "VE", "CL", "EC", "GT", "BO", "DO", "HN", "PY", "SV", "NI", "CR", "PA", "UY", "PR", "GQ", "PT", "BR", "AO", "MZ", "CV", "GW", "ST", "TL", "MO"],
+      "watch_now_blocked_countries": ["US","IN","ES"]
     },
     "ads": {
       "show_ads": true,
