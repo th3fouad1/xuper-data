@@ -1,0 +1,33 @@
+name: Update movie and series catalog
+on:
+  schedule:
+    - cron: '37 4 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: update-catalog
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run regression tests
+        run: node --test scripts/update-catalog.test.mjs
+      - name: Fetch and validate TMDB catalog
+        env:
+          TMDB_READ_TOKEN: ${{ secrets.TMDB_READ_TOKEN }}
+        run: node scripts/update-catalog.mjs
+      - name: Publish complete catalog
+        run: |
+          git add movies.json series.json actors.json trending.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Refresh movies, series, actors and weekly trending'
+          git push origin HEAD:main
